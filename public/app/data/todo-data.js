@@ -17,7 +17,7 @@ class todo {
     addTodo(newTodo) {
         debugger;
         //post is used to add a new todo to the db.json 
-        return fetch('http://localhost:3000/todos/todos/', {
+        return fetch('http://localhost:3000/todos/', {
             method: 'POST',
             body: JSON.stringify(newTodo),
             headers: {
