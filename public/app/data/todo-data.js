@@ -17,7 +17,7 @@ class todo {
     addTodo(newTodo) {
         debugger;
         //post is used to add a new todo to the db.json 
-        return fetch('http://localhost:3000/todos/', {
+        return fetch('/todos', {
             method: 'POST',
             body: JSON.stringify(newTodo),
             headers: {
@@ -32,7 +32,7 @@ class todo {
     }
     changeTodo(changedTodo) {
         debugger;
-        return fetch(`http://localhost:3000/todos/${changedTodo.id}`, {
+        return fetch(`/todos/${changedTodo.id}`, {
             method: 'PATCH',
             body: JSON.stringify({ todoText: changedTodo.todoText }),
             headers: {
@@ -48,7 +48,7 @@ class todo {
     }
     deleteTodo(todoDeleted) {
         debugger;
-        return fetch(`http://localhost:3000/todos/${todoDeleted.id}`, {
+        return fetch(`/todos/${todoDeleted.id}`, {
             method: 'DELETE'
         })
             .then(res => res.json())
@@ -63,7 +63,7 @@ class todo {
         debugger;
         //get todo from DB 
         return todo.getTodo(todoCompleted.id).then(todoinDb => {
-            return fetch(`http://localhost:3000/todos/${todoinDb.id}`, {
+            return fetch(`/todos/${todoinDb.id}`, {
                 method: 'PATCH',
                 body: JSON.stringify({ completed: !(todoinDb.completed) }),
                 headers: {
@@ -80,7 +80,7 @@ class todo {
 
     static getTodo(id) {
 
-        return fetch(`http://localhost:3000/todos/${id}`)
+        return fetch(`/todos/${id}`)
             .then(res => res.json())
             .then(data => data)
             .catch(err => console.log('', err));
@@ -89,7 +89,7 @@ class todo {
 
     static async getAlltodos() {
         debugger;
-        const resp = await fetch('http://localhost:3000/todos/');
+        const resp = await fetch('/todos');
         const data = await resp.json();
         return data;
 
@@ -98,7 +98,7 @@ class todo {
         debugger;
         return todo.getAlltodos().then(data => {
             data.forEach(function (todoObj) {
-                fetch(`http://localhost:3000/todos/${todoObj.id}`, {
+                fetch(`/todos/${todoObj.id}`, {
                     method: 'PATCH',
                     body: JSON.stringify({ completed: !(todoObj.completed) }),
                     headers: {

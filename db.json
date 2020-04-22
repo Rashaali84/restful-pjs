@@ -31,12 +31,7 @@
     },
     {
       "completed": true,
-      "todoText": "n2cgt",
-      "id": 8
-    },
-    {
-      "completed": false,
-      "todoText": "nge5e",
+      "todoText": "new todo",
       "id": 9
     },
     {
@@ -48,6 +43,11 @@
       "id": 11,
       "completed": true,
       "todoText": "change again"
+    },
+    {
+      "id": 12,
+      "completed": false,
+      "todoText": "new todo"
     }
   ]
 }
