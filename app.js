@@ -1,5 +1,5 @@
 const http = require('http');
-   fs = require('fs');
+const fs = require('fs');
 const port = process.env.PORT || 3000
 
 fs.readFile('./public/index.html', function (err, html) {
