@@ -35,6 +35,11 @@ This project is created with:
 
 Clone this repository and start using it with your editor.
 
+## Live Deploy on Heroku
+
+Please note you have to havea json db running on http://localhost:3000/todos/ on your machine .
+Live url click here https://restful-pjs.herokuapp.com/
+
 ## Video-Demo
 [![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://www.dropbox.com/s/4mq2juodrmfa2ue/restjs.mp4?dl=0)
 
