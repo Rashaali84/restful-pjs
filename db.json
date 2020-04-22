@@ -2,52 +2,57 @@
   "todos": [
     {
       "todoText": "task to test",
-      "completed": false,
+      "completed": true,
       "id": 1
     },
     {
-      "completed": false,
+      "completed": true,
       "id": 2
     },
     {
       "todoText": "third todo",
-      "completed": false,
+      "completed": true,
       "id": 3
     },
     {
-      "completed": true,
+      "completed": false,
       "todoText": "tkm1f",
       "id": 4
     },
     {
-      "completed": false,
+      "completed": true,
       "todoText": "gvmaq",
       "id": 6
     },
     {
-      "completed": true,
-      "todoText": "pc4",
+      "completed": false,
+      "todoText": "change todo",
       "id": 7
     },
     {
-      "completed": false,
+      "completed": true,
       "todoText": "new todo",
       "id": 9
     },
     {
-      "completed": true,
+      "completed": false,
       "todoText": "wbosf",
       "id": 10
     },
     {
       "id": 11,
-      "completed": false,
+      "completed": true,
       "todoText": "change again"
     },
     {
       "id": 12,
       "completed": true,
       "todoText": "new todo"
+    },
+    {
+      "id": 13,
+      "completed": false,
+      "todoText": "new task"
     }
   ]
 }
