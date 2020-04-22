@@ -1,12 +1,18 @@
 const http = require('http');
+   fs = require('fs');
 const port = process.env.PORT || 3000
 
-const server = http.createServer((req, res) => {
-  res.statusCode = 200;
-  res.setHeader('Content-Type', 'text/html');
-  res.end('<h1>Hello World</h1>');
-});
-
+fs.readFile('./public/index.html', function (err, html) {
+    if (err) {
+        throw err; 
+    }  
+  
+const server =  http.createServer(function(request, response) {  
+        response.writeHeader(200, {"Content-Type": "text/html"});  
+        response.write(html);  
+        response.end();  
+    });
+  
 server.listen(port,() => {
   console.log(`Server running at port `+port);
 });
