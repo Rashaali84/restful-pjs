@@ -4,7 +4,7 @@ A dynamic web page for an application built with ...fullstack design ! this proj
 
 Try the live demo [right here](https://rashaali84.github.io/restful-pjs/), it looks something like this:
 
-[![To-do list Project screen shot](./FireShot Capture 034 - To-do list-restful-pjs Project - .png](https://rashaali84.github.io/restful-pjs/)
+[![To-do list Project screen shot](./fire-shot.png)](https://rashaali84.github.io/restful-pjs/)
 
 [Please click here for the wire-frame link of the project](https://wireframe.cc/OjvAvT)
 
