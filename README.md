@@ -28,7 +28,7 @@ This project is created with:
 
 - ECMAScript6 
 - HTML5 /CSS3
-- db.json
+- node.js
 
 
 ## Setup
