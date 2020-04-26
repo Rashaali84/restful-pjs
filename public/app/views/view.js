@@ -1,7 +1,7 @@
 
 class view {
     static displayTodos() {
-        debugger;
+
         var todosUl = document.querySelector('ul');
         todosUl.innerHTML = '';
         todo.getAlltodos().then(data => {
@@ -29,7 +29,7 @@ class view {
         return deleteButton;
     }
     static setUpEventListeners() {
-        debugger;
+
         //attach the delete listener tp the newly created delete button 
         var todosUl = document.querySelector('ul');
 
@@ -42,7 +42,7 @@ class view {
         });
     }
 }
-debugger;
+
 //call the listener for the delete button created .
 window.onload = () => {
     view.setUpEventListeners();
